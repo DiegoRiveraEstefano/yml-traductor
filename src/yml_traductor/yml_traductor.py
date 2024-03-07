@@ -118,5 +118,10 @@ class ConfigTranslatorApp(object):
         print("------Translate Complete--------")
 
 
+def main():
+    exit_code = fire.Fire(ConfigTranslatorApp)
+    return exit_code
+
+
 if __name__ == '__main__':
     fire.Fire(ConfigTranslatorApp)
