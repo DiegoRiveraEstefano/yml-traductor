@@ -120,7 +120,6 @@ class ConfigTranslatorApp(object):
 
 def main():
     exit_code = fire.Fire(ConfigTranslatorApp)
-    return exit_code
 
 
 if __name__ == '__main__':

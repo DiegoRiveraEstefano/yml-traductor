@@ -32,7 +32,7 @@ optional = true
 pytest-github-actions-annotate-failures = "^0.1.7"
 
 [tool.poetry.scripts]
-poetry = "yml_traductor.yml_traductor:main"
+ymltranslate = "src.yml_traductor.yml_traductor:main"
 
 
 [tool.ruff]
