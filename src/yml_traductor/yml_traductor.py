@@ -122,5 +122,5 @@ def main():
     exit_code = fire.Fire(ConfigTranslatorApp)
 
 
-if __name__ == '__main__':
+#if __name__ == '__main__':
     fire.Fire(ConfigTranslatorApp)

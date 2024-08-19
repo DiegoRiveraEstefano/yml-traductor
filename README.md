@@ -9,5 +9,5 @@ a python program that translate a yml file into another yml file
 or
 > pip install -r requirements.txt
 
-> python main.py translate --path=messages.yml --lang_from=en --lang_to=es
+> python src/yml_traductor translate --path=messages.yml --lang_from=en --lang_to=es
 
