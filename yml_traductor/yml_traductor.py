@@ -4,7 +4,6 @@ import re
 from googletrans import Translator
 from tqdm import tqdm
 import yaml
-import asyncio
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-i", "--input", help = "path to the input file", required = False)
