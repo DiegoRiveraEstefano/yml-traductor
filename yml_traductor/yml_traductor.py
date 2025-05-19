@@ -1,3 +1,4 @@
+import asyncio
 from typing import Any
 import argparse
 import re
@@ -79,8 +80,7 @@ async def traverse(data: dict[str, Any], lang: str,
             
     return new_data
 
-
-async def main() -> None:
+async def _main() -> None:
     # languages to translate the text
     langs = args.langs.split(",")
     if len(langs) != 2:
@@ -108,3 +108,6 @@ async def main() -> None:
     # write the decoded text to the output file
     open(args.output, "w", encoding="utf-8").write(decoded_text)
 
+
+def main() -> None:
+    asyncio.run(_main())

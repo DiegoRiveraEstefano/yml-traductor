@@ -4,8 +4,8 @@ version = "0.1.0"
 description = ""
 authors = ["diego <diego.rivera.estefano@gmail.com>"]
 readme = "README.md"
-packages = [{include = "yml_traductor/"}, {include = "data/"}]
-include = [{ path = "tests", format = "sdist" }]
+packages = [{include = "yml_traductor/"}]
+include = [{ path = "tests", format = "sdist" }, { path = "data/*", format = "sdist" }]
 
 [tool.poetry.dependencies]
 python = "^3.11"
